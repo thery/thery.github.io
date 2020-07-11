@@ -2523,12 +2523,12 @@
           
 
             i = 501;
-            data = "1 subgoal (ID 54636)	  	  n : nat	  IH : forall e : {fset nat}, #|` e| < n.+1 -> #|` e|.-1 <= \max_(i <- e) i	  e : {fset nat}	  eC : #|` e|.+1 = n.+2	  i : nat	  iIe : i \in e	  iM : \max_(i <- e) i = i	  eE : #|` e| = #|` e `\ i|.+1	  H : #|` e `\ i|.-1 <= \max_(i <- e `\ i) i	  k : nat	  eIE : #|` e `\ i| = k.+1	  j : nat_choiceType	  jDi : j != i	  jIe : j \in e	  jM : \max_(i <- e `\ i) i = j	  ============================	  k < \max_(i0 <- e) i0	";
+            data = "";
             responses[i]=data;
           
 
             i = 502;
-            data = "1 subgoal (ID 54641)	  	  n : nat	  IH : forall e : {fset nat}, #|` e| < n.+1 -> #|` e|.-1 <= \max_(i <- e) i	  e : {fset nat}	  eC : #|` e|.+1 = n.+2	  i : nat	  iIe : i \in e	  iM : \max_(i <- e) i = i	  eE : #|` e| = #|` e `\ i|.+1	  k : nat	  eIE : #|` e `\ i| = k.+1	  j : nat_choiceType	  jDi : j != i	  jIe : j \in e	  jM : \max_(i <- e `\ i) i = j	  H : k.+1.-1 <= \max_(i <- e `\ i) i	  ============================	  k < \max_(i0 <- e) i0	";
+            data = "1 subgoal (ID 54636)	  	  n : nat	  IH : forall e : {fset nat}, #|` e| < n.+1 -> #|` e|.-1 <= \max_(i <- e) i	  e : {fset nat}	  eC : #|` e|.+1 = n.+2	  i : nat	  iIe : i \in e	  iM : \max_(i <- e) i = i	  eE : #|` e| = #|` e `\ i|.+1	  H : #|` e `\ i|.-1 <= \max_(i <- e `\ i) i	  k : nat	  eIE : #|` e `\ i| = k.+1	  j : nat_choiceType	  jDi : j != i	  jIe : j \in e	  jM : \max_(i <- e `\ i) i = j	  ============================	  k < \max_(i0 <- e) i0	1 subgoal (ID 54641)	  	  n : nat	  IH : forall e : {fset nat}, #|` e| < n.+1 -> #|` e|.-1 <= \max_(i <- e) i	  e : {fset nat}	  eC : #|` e|.+1 = n.+2	  i : nat	  iIe : i \in e	  iM : \max_(i <- e) i = i	  eE : #|` e| = #|` e `\ i|.+1	  k : nat	  eIE : #|` e `\ i| = k.+1	  j : nat_choiceType	  jDi : j != i	  jIe : j \in e	  jM : \max_(i <- e `\ i) i = j	  H : k.+1.-1 <= \max_(i <- e `\ i) i	  ============================	  k < \max_(i0 <- e) i0	";
             responses[i]=data;
           
 
@@ -3233,12 +3233,12 @@
           
 
             i = 643;
-            data = "3 subgoals (ID 54723)	  	  n : nat	  e1 : {fset nat}	  e1Sn : e1 `<=` `[n]	  s : nat	  IH : forall e2 : {fset nat},	       Δs.-1 <= n ->	       #|` e2| <= s -> ψ(e1 `|` e2) - ψ(e1) <= ψ(`[n + s]) - ψ(`[n])	  e2 : {fset nat}	  dLn : Δs.+1.-1 <= n	  Ce2 : #|` e2| <= s.+1	  x : nat_choiceType	  xIe2 : x \in e2	  dLn1 : Δs.-1 <= n	  e3 := e2 `\ x : {fset nat_choiceType}	  Ce3 : #|` e3| <= s	  xIe1 : x \in e1	  i : nat_choiceType	  ============================	  (i \in e1) || (i \in e2) = (i \in e1) || (i != x) && (i \in e2)		subgoal 2 (ID 53866) is:	 ψ(e1 `|` e3) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	subgoal 3 (ID 53856) is:	 ψ(e1 `|` e2) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	2 subgoals (ID 53866)	  	  n : nat	  e1 : {fset nat}	  e1Sn : e1 `<=` `[n]	  s : nat	  IH : forall e2 : {fset nat},	       Δs.-1 <= n ->	       #|` e2| <= s -> ψ(e1 `|` e2) - ψ(e1) <= ψ(`[n + s]) - ψ(`[n])	  e2 : {fset nat}	  dLn : Δs.+1.-1 <= n	  Ce2 : #|` e2| <= s.+1	  x : nat_choiceType	  xIe2 : x \in e2	  dLn1 : Δs.-1 <= n	  e3 := e2 `\ x : {fset nat_choiceType}	  Ce3 : #|` e3| <= s	  xIe1 : x \in e1	  ============================	  ψ(e1 `|` e3) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1		subgoal 2 (ID 53856) is:	 ψ(e1 `|` e2) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	";
+            data = "";
             responses[i]=data;
           
 
             i = 644;
-            data = "1 subgoal (ID 53856)	  	  n : nat	  e1 : {fset nat}	  e1Sn : e1 `<=` `[n]	  s : nat	  IH : forall e2 : {fset nat},	       Δs.-1 <= n ->	       #|` e2| <= s -> ψ(e1 `|` e2) - ψ(e1) <= ψ(`[n + s]) - ψ(`[n])	  e2 : {fset nat}	  dLn : Δs.+1.-1 <= n	  Ce2 : #|` e2| <= s.+1	  x : nat_choiceType	  xIe2 : x \in e2	  dLn1 : Δs.-1 <= n	  e3 := e2 `\ x : {fset nat_choiceType}	  Ce3 : #|` e3| <= s	  xNIe1 : x \notin e1	  ============================	  ψ(e1 `|` e2) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	";
+            data = "3 subgoals (ID 54723)	  	  n : nat	  e1 : {fset nat}	  e1Sn : e1 `<=` `[n]	  s : nat	  IH : forall e2 : {fset nat},	       Δs.-1 <= n ->	       #|` e2| <= s -> ψ(e1 `|` e2) - ψ(e1) <= ψ(`[n + s]) - ψ(`[n])	  e2 : {fset nat}	  dLn : Δs.+1.-1 <= n	  Ce2 : #|` e2| <= s.+1	  x : nat_choiceType	  xIe2 : x \in e2	  dLn1 : Δs.-1 <= n	  e3 := e2 `\ x : {fset nat_choiceType}	  Ce3 : #|` e3| <= s	  xIe1 : x \in e1	  i : nat_choiceType	  ============================	  (i \in e1) || (i \in e2) = (i \in e1) || (i != x) && (i \in e2)		subgoal 2 (ID 53866) is:	 ψ(e1 `|` e3) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	subgoal 3 (ID 53856) is:	 ψ(e1 `|` e2) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	2 subgoals (ID 53866)	  	  n : nat	  e1 : {fset nat}	  e1Sn : e1 `<=` `[n]	  s : nat	  IH : forall e2 : {fset nat},	       Δs.-1 <= n ->	       #|` e2| <= s -> ψ(e1 `|` e2) - ψ(e1) <= ψ(`[n + s]) - ψ(`[n])	  e2 : {fset nat}	  dLn : Δs.+1.-1 <= n	  Ce2 : #|` e2| <= s.+1	  x : nat_choiceType	  xIe2 : x \in e2	  dLn1 : Δs.-1 <= n	  e3 := e2 `\ x : {fset nat_choiceType}	  Ce3 : #|` e3| <= s	  xIe1 : x \in e1	  ============================	  ψ(e1 `|` e3) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1		subgoal 2 (ID 53856) is:	 ψ(e1 `|` e2) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	1 subgoal (ID 53856)	  	  n : nat	  e1 : {fset nat}	  e1Sn : e1 `<=` `[n]	  s : nat	  IH : forall e2 : {fset nat},	       Δs.-1 <= n ->	       #|` e2| <= s -> ψ(e1 `|` e2) - ψ(e1) <= ψ(`[n + s]) - ψ(`[n])	  e2 : {fset nat}	  dLn : Δs.+1.-1 <= n	  Ce2 : #|` e2| <= s.+1	  x : nat_choiceType	  xIe2 : x \in e2	  dLn1 : Δs.-1 <= n	  e3 := e2 `\ x : {fset nat_choiceType}	  Ce3 : #|` e3| <= s	  xNIe1 : x \notin e1	  ============================	  ψ(e1 `|` e2) - ψ(e1 `|` e3) <= 2 ^ (∇(n + s).+1).-1	";
             responses[i]=data;
           
 
