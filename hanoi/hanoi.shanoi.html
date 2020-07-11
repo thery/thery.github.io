@@ -208,7 +208,7 @@
           
 
             i = 38;
-            data = "";
+            data = "1 subgoal (ID 7748)	  	  m : nat	  p0 := ord0 : peg m.+3	  n : nat	  c : configuration m.+3 n	  p : peg m.+3	  ============================	  c `-->* `c[p]	";
             responses[i]=data;
           
 
@@ -218,172 +218,172 @@
           
 
             i = 40;
-            data = "";
+            data = "1 subgoal (ID 7753)	  	  m : nat	  p0 := ord0 : peg m.+3	  n : nat	  c : configuration m.+3 n	  p : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  ============================	  c `-->* `c[p]	";
             responses[i]=data;
           
 
             i = 41;
-            data = "";
+            data = "1 subgoal (ID 7772)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  ============================	  c `-->* `c[p]	";
             responses[i]=data;
           
 
             i = 42;
-            data = "";
+            data = "1 subgoal (ID 8130)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  ============================	  c `-->* `c[p]	";
             responses[i]=data;
           
 
             i = 43;
-            data = "";
+            data = "1 subgoal (ID 8154)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 44;
-            data = "";
+            data = "1 subgoal (ID 8257)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 45;
-            data = "";
+            data = "2 subgoals (ID 8667)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p		subgoal 2 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 46;
-            data = "";
+            data = "2 subgoals (ID 8670)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  ============================	  ↑[↓[c]]_p0 `-->* ↑[`c[p]]_p		subgoal 2 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 47;
-            data = "";
+            data = "2 subgoals (ID 8679)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  sDp0 : so1 p != p0	  sDp : so1 p != p	  ============================	  ↑[↓[c]]_p0 `-->* ↑[`c[p]]_p		subgoal 2 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 48;
-            data = "";
+            data = "3 focused subgoals	(shelved: 2) (ID 8792)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  sDp0 : so1 p != p0	  sDp : so1 p != p	  ============================	  ↑[`c[so1 p]]_p `-->* ↑[`c[p]]_p		subgoal 2 (ID 8791) is:	 ↑[↓[c]]_p0 `-->* ↑[`c[so1 p]]_p	subgoal 3 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 49;
-            data = "";
+            data = "2 focused subgoals	(shelved: 1) (ID 8791)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  sDp0 : so1 p != p0	  sDp : so1 p != p	  ============================	  ↑[↓[c]]_p0 `-->* ↑[`c[so1 p]]_p		subgoal 2 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 50;
-            data = "";
+            data = "3 focused subgoals	(shelved: 2) (ID 9215)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  sDp0 : so1 p != p0	  sDp : so1 p != p	  ============================	  ↑[↓[c]]_p0 `-->* ↑[`c[so1 p]]_p0		subgoal 2 (ID 9216) is:	 ↑[`c[so1 p]]_p0 `-->* ↑[`c[so1 p]]_p	subgoal 3 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 51;
-            data = "";
+            data = "2 focused subgoals	(shelved: 1) (ID 9216)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  sDp0 : so1 p != p0	  sDp : so1 p != p	  ============================	  ↑[`c[so1 p]]_p0 `-->* ↑[`c[so1 p]]_p		subgoal 2 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 52;
-            data = "";
+            data = "2 focused subgoals	(shelved: 1) (ID 9938)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Ep0 : p1 = p0	  sDp0 : so1 p != p0	  sDp : so1 p != p	  ============================	  srel p0 p		subgoal 2 (ID 8668) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 53;
-            data = "";
+            data = "1 subgoal (ID 8668)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 54;
-            data = "";
+            data = "2 subgoals (ID 10063)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p		subgoal 2 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 55;
-            data = "";
+            data = "2 subgoals (ID 10073)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  sDp0 : so1 p1 != p0	  sDp1 : so1 p1 != p1	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p		subgoal 2 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 56;
-            data = "";
+            data = "3 focused subgoals	(shelved: 2) (ID 10185)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  sDp0 : so1 p1 != p0	  sDp1 : so1 p1 != p1	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[so1 p1]]_p1		subgoal 2 (ID 10186) is:	 ↑[`c[so1 p1]]_p1 `-->* ↑[`c[p]]_p	subgoal 3 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 57;
-            data = "";
+            data = "2 focused subgoals	(shelved: 1) (ID 10186)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  sDp0 : so1 p1 != p0	  sDp1 : so1 p1 != p1	  ============================	  ↑[`c[so1 p1]]_p1 `-->* ↑[`c[p]]_p		subgoal 2 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 58;
-            data = "";
+            data = "3 focused subgoals	(shelved: 2) (ID 10609)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  sDp0 : so1 p1 != p0	  sDp1 : so1 p1 != p1	  ============================	  ↑[`c[so1 p1]]_p1 `-->* ↑[`c[so1 p1]]_p		subgoal 2 (ID 10610) is:	 ↑[`c[so1 p1]]_p `-->* ↑[`c[p]]_p	subgoal 3 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 59;
-            data = "";
+            data = "4 focused subgoals	(shelved: 3) (ID 11021)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  sDp0 : so1 p1 != p0	  sDp1 : so1 p1 != p1	  ============================	  srel p1 p		subgoal 2 (ID 11023) is:	 p != so1 p1	subgoal 3 (ID 10610) is:	 ↑[`c[so1 p1]]_p `-->* ↑[`c[p]]_p	subgoal 4 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 60;
-            data = "";
+            data = "3 focused subgoals	(shelved: 2) (ID 11023)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  sDp0 : so1 p1 != p0	  sDp1 : so1 p1 != p1	  ============================	  p != so1 p1		subgoal 2 (ID 10610) is:	 ↑[`c[so1 p1]]_p `-->* ↑[`c[p]]_p	subgoal 3 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 61;
-            data = "";
+            data = "2 focused subgoals	(shelved: 1) (ID 10610)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pEp0 : p = p0	  sDp0 : so1 p1 != p0	  sDp1 : so1 p1 != p1	  ============================	  ↑[`c[so1 p1]]_p `-->* ↑[`c[p]]_p		subgoal 2 (ID 10064) is:	 ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 62;
-            data = "";
+            data = "1 subgoal (ID 10064)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 63;
-            data = "";
+            data = "2 focused subgoals	(shelved: 2) (ID 11504)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[↓[c]]_p1 `-->* ↑[`c[p]]_p1		subgoal 2 (ID 11505) is:	 ↑[`c[p]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 64;
-            data = "";
+            data = "1 focused subgoal	(shelved: 1) (ID 11505)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[`c[p]]_p1 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 65;
-            data = "";
+            data = "2 focused subgoals	(shelved: 2) (ID 11928)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[`c[p]]_p1 `-->* ↑[`c[p]]_p0		subgoal 2 (ID 11929) is:	 ↑[`c[p]]_p0 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 66;
-            data = "";
+            data = "2 focused subgoals	(shelved: 2) (ID 12340)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  srel p1 p0		subgoal 2 (ID 11929) is:	 ↑[`c[p]]_p0 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 67;
-            data = "";
+            data = "1 focused subgoal	(shelved: 1) (ID 11929)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[`c[p]]_p0 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 68;
-            data = "";
+            data = "2 focused subgoals	(shelved: 2) (ID 12476)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[`c[p]]_p0 `-->* ↑[`c[p1]]_p0		subgoal 2 (ID 12477) is:	 ↑[`c[p1]]_p0 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 69;
-            data = "";
+            data = "1 focused subgoal	(shelved: 1) (ID 12477)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[`c[p1]]_p0 `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 70;
-            data = "";
+            data = "2 focused subgoals	(shelved: 2) (ID 12900)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[`c[p1]]_p0 `-->* ↑[`c[p1]]_p		subgoal 2 (ID 12901) is:	 ↑[`c[p1]]_p `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 71;
-            data = "";
+            data = "2 focused subgoals	(shelved: 2) (ID 13312)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  srel p0 p		subgoal 2 (ID 12901) is:	 ↑[`c[p1]]_p `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 72;
-            data = "";
+            data = "1 focused subgoal	(shelved: 1) (ID 12901)	  	  m : nat	  p0 := ord0 : peg m.+3	  sirr : irreflexive (srel (n:=m.+3))	  n : nat	  IH : forall (c : configuration m.+3 n) (p : peg m.+3), c `-->* `c[p]	  c : configuration m.+3 n.+1	  p : peg m.+3	  p1 := c ldisk : (fun=> peg m.+3) ldisk	  pDp1 : p != p1	  p1Dp0 : p1 != p0	  pDp0 : p != p0	  ============================	  ↑[`c[p1]]_p `-->* ↑[`c[p]]_p	";
             responses[i]=data;
           
 
             i = 73;
-            data = "";
+            data = "No more subgoals.	";
             responses[i]=data;
           
 
@@ -393,7 +393,7 @@
           
 
             i = 75;
-            data = "";
+            data = "1 subgoal (ID 7760)	  	  m : nat	  p0 := ord0 : peg m.+3	  n : nat	  c1, c2 : configuration m.+3 n	  ============================	  c1 `-->* c2	";
             responses[i]=data;
           
 
@@ -403,17 +403,17 @@
           
 
             i = 77;
-            data = "";
+            data = "1 focused subgoal	(shelved: 1) (ID 7804)	  	  m : nat	  p0 := ord0 : peg m.+3	  n : nat	  c1, c2 : configuration m.+3 n	  ============================	  `c[p0] `-->* c2	";
             responses[i]=data;
           
 
             i = 78;
-            data = "";
+            data = "1 subgoal (ID 7815)	  	  m : nat	  p0 := ord0 : peg m.+3	  n : nat	  c1, c2 : configuration m.+3 n	  ============================	  connect (move (srel (n:=m.+3))) c2 `c[p0]	";
             responses[i]=data;
           
 
             i = 79;
-            data = "";
+            data = "No more subgoals.	";
             responses[i]=data;
           
 
