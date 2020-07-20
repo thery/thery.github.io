@@ -198,12 +198,12 @@
           
 
             i = 36;
-            data = "No more subgoals.	";
+            data = "";
             responses[i]=data;
           
 
             i = 37;
-            data = "";
+            data = "No more subgoals.	";
             responses[i]=data;
           
 
@@ -218,132 +218,132 @@
           
 
             i = 40;
-            data = "<infomsg>hrel is declared</infomsg>	<infomsg>hirr is declared</infomsg>	<infomsg>hsym is declared</infomsg>	<infomsg>hmove is defined</infomsg>	<infomsg>hmove_sym is defined</infomsg>	<infomsg>hconnect is defined</infomsg>	1 subgoal (ID 7734)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  ============================	  c1 `--> c2 -> c1 ldisk != c2 ldisk -> ↓[c2] = `c[`p[c1 ldisk, c2 ldisk]]	1 subgoal (ID 7736)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  ============================	  ↓[c2] = `c[`p[c1 ldisk, c2 ldisk]]	1 subgoal (ID 7856)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  ============================	  c2 (extra.trshift 1 i) = `p[c1 ldisk, c2 ldisk]	1 subgoal (ID 7995)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  ============================	  c2 (extra.trshift 1 i) = `p[c1 ldisk, c2 ldisk]	";
+            data = "";
             responses[i]=data;
           
 
             i = 41;
-            data = "2 subgoals (ID 8265)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  ============================	  c1 ldisk != c2 (extra.trshift 1 i)		subgoal 2 (ID 8266) is:	 c2 ldisk != c2 (extra.trshift 1 i)	";
+            data = "";
             responses[i]=data;
           
 
             i = 42;
-            data = "2 subgoals (ID 8309)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c1lEc1r : c1 ldisk = c1 (extra.trshift 1 i)	  ============================	  False		subgoal 2 (ID 8266) is:	 c2 ldisk != c2 (extra.trshift 1 i)	";
+            data = "1 subgoal (ID 7709)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  p, p1, p2 : peg 3	  ============================	  p1 != p2 -> `p[`p[p1, p2], p1] = p2	1 focused subgoal	(shelved: 1) (ID 7766)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  p, p1, p2 : peg 3	  p1Dp2 : p1 != p2	  ============================	  `p[`p[p1, p2], p1] == p2	No more subgoals.	1 subgoal (ID 7719)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  p, p1, p2 : peg 3	  ============================	  p1 != p2 -> `p[`p[p1, p2], p2] = p1	1 focused subgoal	(shelved: 1) (ID 7776)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  p, p1, p2 : peg 3	  p1Dp2 : p1 != p2	  ============================	  `p[`p[p1, p2], p2] == p1	No more subgoals.	<infomsg>hrel is declared</infomsg>	<infomsg>hirr is declared</infomsg>	<infomsg>hsym is declared</infomsg>	<infomsg>hmove is defined</infomsg>	<infomsg>hmove_sym is defined</infomsg>	";
             responses[i]=data;
           
 
             i = 43;
-            data = "2 subgoals (ID 8354)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c1lEc1r : c1 ldisk = c1 (extra.trshift 1 i)	  ============================	  ldisk <= extra.trshift 1 i -> False		subgoal 2 (ID 8266) is:	 c2 ldisk != c2 (extra.trshift 1 i)	";
+            data = "<infomsg>hconnect is defined</infomsg>	";
             responses[i]=data;
           
 
             i = 44;
-            data = "1 subgoal (ID 8266)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  ============================	  c2 ldisk != c2 (extra.trshift 1 i)	";
+            data = "";
             responses[i]=data;
           
 
             i = 45;
-            data = "1 subgoal (ID 8432)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c2lEc2r : c2 ldisk = c2 (extra.trshift 1 i)	  ============================	  False	";
+            data = "";
             responses[i]=data;
           
 
             i = 46;
-            data = "1 subgoal (ID 8477)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c2lEc2r : c2 ldisk = c2 (extra.trshift 1 i)	  ============================	  ldisk <= extra.trshift 1 i -> False	";
+            data = "1 subgoal (ID 7754)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  ============================	  c1 `--> c2 -> c1 ldisk != c2 ldisk -> ↓[c2] = `c[`p[c1 ldisk, c2 ldisk]]	";
             responses[i]=data;
           
 
             i = 47;
-            data = "No more subgoals.	";
+            data = "";
             responses[i]=data;
           
 
             i = 48;
-            data = "";
+            data = "1 subgoal (ID 7756)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  ============================	  ↓[c2] = `c[`p[c1 ldisk, c2 ldisk]]	";
             responses[i]=data;
           
 
             i = 49;
-            data = "1 subgoal (ID 7753)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  ============================	  c1 `--> c2 -> c1 ldisk != c2 ldisk -> ↓[c1] = `c[`p[c1 ldisk, c2 ldisk]]	";
+            data = "1 subgoal (ID 7876)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  ============================	  c2 (extra.trshift 1 i) = `p[c1 ldisk, c2 ldisk]	";
             responses[i]=data;
           
 
             i = 50;
-            data = "";
+            data = "1 subgoal (ID 8015)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  ============================	  c2 (extra.trshift 1 i) = `p[c1 ldisk, c2 ldisk]	";
             responses[i]=data;
           
 
             i = 51;
-            data = "1 subgoal (ID 7768)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  ============================	  c2 `--> c1 -> c2 ldisk != c1 ldisk -> ↓[c1] = `c[`p[c2 ldisk, c1 ldisk]]	";
+            data = "2 subgoals (ID 8285)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  ============================	  c1 ldisk != c2 (extra.trshift 1 i)		subgoal 2 (ID 8286) is:	 c2 ldisk != c2 (extra.trshift 1 i)	";
             responses[i]=data;
           
 
             i = 52;
-            data = "No more subgoals.	";
+            data = "2 subgoals (ID 8329)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c1lEc1r : c1 ldisk = c1 (extra.trshift 1 i)	  ============================	  False		subgoal 2 (ID 8286) is:	 c2 ldisk != c2 (extra.trshift 1 i)	";
             responses[i]=data;
           
 
             i = 53;
-            data = "";
+            data = "2 subgoals (ID 8374)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c1lEc1r : c1 ldisk = c1 (extra.trshift 1 i)	  ============================	  ldisk <= extra.trshift 1 i -> False		subgoal 2 (ID 8286) is:	 c2 ldisk != c2 (extra.trshift 1 i)	";
             responses[i]=data;
           
 
             i = 54;
-            data = "<infomsg>path3S_spec is defined</infomsg>	<infomsg>path3S_spec_rect is defined</infomsg>	<infomsg>path3S_spec_ind is defined</infomsg>	<infomsg>path3S_spec_rec is defined</infomsg>	<infomsg>path3S_spec_sind is defined</infomsg>	";
+            data = "1 subgoal (ID 8286)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  ============================	  c2 ldisk != c2 (extra.trshift 1 i)	";
             responses[i]=data;
           
 
             i = 55;
-            data = "1 subgoal (ID 7824)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  ============================	  path3S_spec c cs (path hmove c cs)	";
+            data = "1 subgoal (ID 8452)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c2lEc2r : c2 ldisk = c2 (extra.trshift 1 i)	  ============================	  False	";
             responses[i]=data;
           
 
             i = 56;
-            data = "";
+            data = "1 subgoal (ID 8497)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  c1Mc2 : c1 `--> c2	  c1lDc2l : c1 ldisk != c2 ldisk	  i : ordinal_finType n	  c1Ec2 : c1 (extra.trshift 1 i) = c2 (extra.trshift 1 i)	  c2lEc2r : c2 ldisk = c2 (extra.trshift 1 i)	  ============================	  ldisk <= extra.trshift 1 i -> False	";
             responses[i]=data;
           
 
             i = 57;
-            data = "1 subgoal (ID 7872)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  ============================	  let p1 := c ldisk in	  forall (p2 : peg 3) (cs1 : seq (configuration 3 n))	    (cs2 : seq (configuration 3 n.+1)),	  let c1 := ↓[c] in	  let c2 := ↑[last c1 cs1]_p2 in	  p1 != p2 ->	  hrel p1 p2 ->	  cs = [seq ↑[i1]_p1 | i1 <- cs1] ++ c2 :: cs2 ->	  path (move hrel) c1 cs1 ->	  move hrel ↑[last c1 cs1]_p1 c2 ->	  path (move hrel) c2 cs2 -> path3S_spec c cs true	";
-            responses[i]=data;
-          
-
-            i = 58;
-            data = "1 subgoal (ID 8033)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  ============================	  path3S_spec c cs true	";
-            responses[i]=data;
-          
-
-            i = 59;
-            data = "2 subgoals (ID 8040)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  ============================	  last c1 cs1 = `c[`p[p1, p2]]		subgoal 2 (ID 8042) is:	 path3S_spec c cs true	";
-            responses[i]=data;
-          
-
-            i = 60;
-            data = "2 subgoals (ID 8049)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  ============================	  (↑[last c1 cs1]_p1 ldisk != c2 ldisk ->	   ↓[↑[last c1 cs1]_p1] = `c[`p[↑[last c1 cs1]_p1 ldisk, c2 ldisk]]) ->	  last c1 cs1 = `c[`p[p1, p2]]		subgoal 2 (ID 8042) is:	 path3S_spec c cs true	";
-            responses[i]=data;
-          
-
-            i = 61;
-            data = "1 subgoal (ID 8042)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  lc1cs1E : last c1 cs1 = `c[`p[p1, p2]]	  ============================	  path3S_spec c cs true	";
-            responses[i]=data;
-          
-
-            i = 62;
-            data = "2 focused subgoals	(shelved: 3) (ID 8126)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  lc1cs1E : last c1 cs1 = `c[`p[p1, p2]]	  ============================	  cs = [seq ↑[i]_(c ldisk) | i <- cs1] ++ ↑[`c[`p[c ldisk, p2]]]_p2 :: ?Goal		subgoal 2 (ID 8128) is:	 path hmove ↑[`c[`p[c ldisk, p2]]]_p2 ?Goal	";
-            responses[i]=data;
-          
-
-            i = 63;
-            data = "1 focused subgoal	(shelved: 1) (ID 8128)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  lc1cs1E : last c1 cs1 = `c[`p[p1, p2]]	  ============================	  path hmove ↑[`c[`p[c ldisk, p2]]]_p2 cs2	";
-            responses[i]=data;
-          
-
-            i = 64;
             data = "No more subgoals.	";
             responses[i]=data;
           
 
-            i = 65;
+            i = 58;
             data = "";
+            responses[i]=data;
+          
+
+            i = 59;
+            data = "1 subgoal (ID 7773)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  ============================	  c1 `--> c2 -> c1 ldisk != c2 ldisk -> ↓[c1] = `c[`p[c1 ldisk, c2 ldisk]]	";
+            responses[i]=data;
+          
+
+            i = 60;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 61;
+            data = "1 subgoal (ID 7788)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c1, c2 : configuration 3 n.+1	  ============================	  c2 `--> c1 -> c2 ldisk != c1 ldisk -> ↓[c1] = `c[`p[c2 ldisk, c1 ldisk]]	";
+            responses[i]=data;
+          
+
+            i = 62;
+            data = "No more subgoals.	";
+            responses[i]=data;
+          
+
+            i = 63;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 64;
+            data = "<infomsg>path3S_spec is defined</infomsg>	<infomsg>path3S_spec_rect is defined</infomsg>	<infomsg>path3S_spec_ind is defined</infomsg>	<infomsg>path3S_spec_rec is defined</infomsg>	<infomsg>path3S_spec_sind is defined</infomsg>	";
+            responses[i]=data;
+          
+
+            i = 65;
+            data = "1 subgoal (ID 7844)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  ============================	  path3S_spec c cs (path hmove c cs)	";
             responses[i]=data;
           
 
@@ -353,42 +353,42 @@
           
 
             i = 67;
-            data = "";
+            data = "1 subgoal (ID 7892)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  ============================	  let p1 := c ldisk in	  forall (p2 : peg 3) (cs1 : seq (configuration 3 n))	    (cs2 : seq (configuration 3 n.+1)),	  let c1 := ↓[c] in	  let c2 := ↑[last c1 cs1]_p2 in	  p1 != p2 ->	  hrel p1 p2 ->	  cs = [seq ↑[i1]_p1 | i1 <- cs1] ++ c2 :: cs2 ->	  path (move hrel) c1 cs1 ->	  move hrel ↑[last c1 cs1]_p1 c2 ->	  path (move hrel) c2 cs2 -> path3S_spec c cs true	";
             responses[i]=data;
           
 
             i = 68;
-            data = "";
+            data = "1 subgoal (ID 8053)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  ============================	  path3S_spec c cs true	";
             responses[i]=data;
           
 
             i = 69;
-            data = "";
+            data = "2 subgoals (ID 8060)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  ============================	  last c1 cs1 = `c[`p[p1, p2]]		subgoal 2 (ID 8062) is:	 path3S_spec c cs true	";
             responses[i]=data;
           
 
             i = 70;
-            data = "";
+            data = "2 subgoals (ID 8069)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  ============================	  (↑[last c1 cs1]_p1 ldisk != c2 ldisk ->	   ↓[↑[last c1 cs1]_p1] = `c[`p[↑[last c1 cs1]_p1 ldisk, c2 ldisk]]) ->	  last c1 cs1 = `c[`p[p1, p2]]		subgoal 2 (ID 8062) is:	 path3S_spec c cs true	";
             responses[i]=data;
           
 
             i = 71;
-            data = "";
+            data = "1 subgoal (ID 8062)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  lc1cs1E : last c1 cs1 = `c[`p[p1, p2]]	  ============================	  path3S_spec c cs true	";
             responses[i]=data;
           
 
             i = 72;
-            data = "";
+            data = "2 focused subgoals	(shelved: 3) (ID 8146)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  lc1cs1E : last c1 cs1 = `c[`p[p1, p2]]	  ============================	  cs = [seq ↑[i]_(c ldisk) | i <- cs1] ++ ↑[`c[`p[c ldisk, p2]]]_p2 :: ?Goal		subgoal 2 (ID 8148) is:	 path hmove ↑[`c[`p[c ldisk, p2]]]_p2 ?Goal	";
             responses[i]=data;
           
 
             i = 73;
-            data = "";
+            data = "1 focused subgoal	(shelved: 1) (ID 8148)	  	  peg1 := ord0 : peg 3	  peg2 := inord 1 : peg 3	  peg3 := inord 2 : peg 3	  hrel : rel (peg 3)	  hirr : irreflexive hrel	  hsym : symmetric hrel	  hmove := [eta @move 3 hrel] : forall n : nat, rel (configuration 3 n)	  hmove_sym := fun (n : nat) (c1 : configuration 3 n) =>	               [eta move_sym hsym c1]	   : forall (n : nat) (c1 c2 : configuration 3 n), c1 `--> c2 = c2 `--> c1	  hconnect := fun n : nat => connect hmove	   : forall n : nat,	     rel (finfun_finType (ordinal_finType n) (ordinal_finType 3))	  n : nat	  c : configuration 3 n.+1	  cs : seq (configuration 3 n.+1)	  p1 := c ldisk : peg 3	  p2 : peg 3	  cs1 : seq (configuration 3 n)	  cs2 : seq (configuration 3 n.+1)	  c1 := ↓[c] : configuration 3 n	  c2 := ↑[last c1 cs1]_p2 : configuration 3 n.+1	  p1Dp2 : p1 != p2	  p1Rp2 : hrel p1 p2	  csE : cs = [seq ↑[i]_p1 | i <- cs1] ++ c2 :: cs2	  c1Pcs1 : path (move hrel) c1 cs1	  lMc2 : move hrel ↑[last c1 cs1]_p1 c2	  c2Pcs2 : path (move hrel) c2 cs2	  lc1cs1E : last c1 cs1 = `c[`p[p1, p2]]	  ============================	  path hmove ↑[`c[`p[c ldisk, p2]]]_p2 cs2	";
             responses[i]=data;
           
 
             i = 74;
-            data = "";
+            data = "No more subgoals.	";
             responses[i]=data;
           
 
@@ -403,6 +403,56 @@
           
 
             i = 77;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 78;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 79;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 80;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 81;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 82;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 83;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 84;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 85;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 86;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 87;
             data = "";
             responses[i]=data;
           
@@ -557,117 +607,169 @@
       mouseover(28, '0_3_3');
       "><br>
 <br>
-<span class="id" title="keyword">Variable</span> <a name="GHanoi3.hrel"><span class="id" title="variable">hrel</span></a> : <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.ssr.ssrbool.html#rel"><span class="id" title="definition">rel</span></a> (<a class="idref" href="hanoi.ghanoi.html#peg"><span class="id" title="definition">peg</span></a> 3).</span><span class="command" onmouseout="
+<span class="id" title="keyword">Lemma</span> <a name="opeg3Kl"><span class="id" title="lemma">opeg3Kl</span></a> <span class="id" title="var">p</span> <span class="id" title="var">p1</span> <span class="id" title="var">p2</span> : <a class="idref" href="hanoi.ghanoi3.html#p1"><span class="id" title="variable">p1</span></a> <span class="id" title="notation">!=</span> <a class="idref" href="hanoi.ghanoi3.html#p2"><span class="id" title="variable">p2</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">p</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">[`</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">p</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">[</span></a><a class="idref" href="hanoi.ghanoi3.html#p1"><span class="id" title="variable">p1</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">,</span></a> <a class="idref" href="hanoi.ghanoi3.html#p2"><span class="id" title="variable">p2</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">],</span></a> <a class="idref" href="hanoi.ghanoi3.html#p1"><span class="id" title="variable">p1</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">]</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="hanoi.ghanoi3.html#p2"><span class="id" title="variable">p2</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
       mouseover(29, '0_3_3');
       "><br>
-<span class="id" title="keyword">Hypothesis</span> <a name="GHanoi3.hirr"><span class="id" title="variable">hirr</span></a> : <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.ssr.ssrbool.html#irreflexive"><span class="id" title="definition">irreflexive</span></a> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hrel"><span class="id" title="variable">hrel</span></a>.</span><span class="command" onmouseout="
+<span class="id" title="keyword">Proof</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
       mouseover(30, '0_3_3');
       "><br>
-<span class="id" title="keyword">Hypothesis</span> <a name="GHanoi3.hsym"><span class="id" title="variable">hsym</span></a> : <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.ssr.ssrbool.html#symmetric"><span class="id" title="definition">symmetric</span></a> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hrel"><span class="id" title="variable">hrel</span></a>.</span><span class="command" onmouseout="
+<span class="id" title="tactic">move</span>⇒ <span class="id" title="var">p1Dp2</span>; <span class="id" title="tactic">apply</span>/<span class="id" title="lemma">eqP</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
       mouseover(31, '0_3_3');
+      "><br>
+<span class="id" title="tactic">by</span> <span class="id" title="tactic">rewrite</span> !<a class="idref" href="hanoi.ghanoi3.html#opeg3E"><span class="id" title="lemma">opeg3E</span></a> ?<a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#e6756e10c36f149b18b4a8741ed83079"><span class="id" title="notation">(</span></a><span class="id" title="abbreviation">eqxx</span><a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#e6756e10c36f149b18b4a8741ed83079"><span class="id" title="notation">,</span></a> <span class="id" title="var">p1Dp2</span><a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#e6756e10c36f149b18b4a8741ed83079"><span class="id" title="notation">)</span></a> // [<span class="id" title="tactic">in</span> <span class="id" title="var">p2</span> <span class="id" title="notation">!=</span> <span class="id" title="var">p1</span>]<span class="id" title="lemma">eq_sym</span> <span class="id" title="var">p1Dp2</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(32, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Qed</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(33, '0_3_3');
+      "><br>
+<br>
+<span class="id" title="keyword">Lemma</span> <a name="opeg3Kr"><span class="id" title="lemma">opeg3Kr</span></a> <span class="id" title="var">p</span> <span class="id" title="var">p1</span> <span class="id" title="var">p2</span> : <a class="idref" href="hanoi.ghanoi3.html#p1"><span class="id" title="variable">p1</span></a> <span class="id" title="notation">!=</span> <a class="idref" href="hanoi.ghanoi3.html#p2"><span class="id" title="variable">p2</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">p</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">[`</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">p</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">[</span></a><a class="idref" href="hanoi.ghanoi3.html#p1"><span class="id" title="variable">p1</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">,</span></a> <a class="idref" href="hanoi.ghanoi3.html#p2"><span class="id" title="variable">p2</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">],</span></a> <a class="idref" href="hanoi.ghanoi3.html#p2"><span class="id" title="variable">p2</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">]</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="hanoi.ghanoi3.html#p1"><span class="id" title="variable">p1</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(34, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Proof</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(35, '0_3_3');
+      "><br>
+<span class="id" title="tactic">move</span>⇒ <span class="id" title="var">p1Dp2</span>; <span class="id" title="tactic">apply</span>/<span class="id" title="lemma">eqP</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(36, '0_3_3');
+      "><br>
+<span class="id" title="tactic">by</span> <span class="id" title="tactic">rewrite</span> !<a class="idref" href="hanoi.ghanoi3.html#opeg3E"><span class="id" title="lemma">opeg3E</span></a> ?<a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#e6756e10c36f149b18b4a8741ed83079"><span class="id" title="notation">(</span></a><span class="id" title="abbreviation">eqxx</span><a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#e6756e10c36f149b18b4a8741ed83079"><span class="id" title="notation">,</span></a> <span class="id" title="var">p1Dp2</span><a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#e6756e10c36f149b18b4a8741ed83079"><span class="id" title="notation">)</span></a> // [<span class="id" title="tactic">in</span> <span class="id" title="var">p2</span> <span class="id" title="notation">!=</span> <span class="id" title="var">p1</span>]<span class="id" title="lemma">eq_sym</span> <span class="id" title="var">p1Dp2</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(37, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Qed</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(38, '0_3_3');
+      "><br>
+<br>
+<span class="id" title="keyword">Variable</span> <a name="GHanoi3.hrel"><span class="id" title="variable">hrel</span></a> : <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.ssr.ssrbool.html#rel"><span class="id" title="definition">rel</span></a> (<a class="idref" href="hanoi.ghanoi.html#peg"><span class="id" title="definition">peg</span></a> 3).</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(39, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Hypothesis</span> <a name="GHanoi3.hirr"><span class="id" title="variable">hirr</span></a> : <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.ssr.ssrbool.html#irreflexive"><span class="id" title="definition">irreflexive</span></a> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hrel"><span class="id" title="variable">hrel</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(40, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Hypothesis</span> <a name="GHanoi3.hsym"><span class="id" title="variable">hsym</span></a> : <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.ssr.ssrbool.html#symmetric"><span class="id" title="definition">symmetric</span></a> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hrel"><span class="id" title="variable">hrel</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(41, '0_3_3');
       "><br>
 <br>
 <span class="id" title="keyword">Let</span> <a name="GHanoi3.hmove"><span class="id" title="variable">hmove</span></a> {<span class="id" title="var">n</span>} := @<a class="idref" href="hanoi.ghanoi.html#move"><span class="id" title="definition">move</span></a> 3 <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hrel"><span class="id" title="variable">hrel</span></a> <a class="idref" href="hanoi.ghanoi3.html#n"><span class="id" title="variable">n</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(32, '0_3_3');
+      mouseover(42, '0_3_3');
       "><br>
 <span class="id" title="keyword">Let</span> <a name="GHanoi3.hmove_sym"><span class="id" title="variable">hmove_sym</span></a> <span class="id" title="var">n</span> (<span class="id" title="var">c1</span> <span class="id" title="var">c2</span> : <a class="idref" href="hanoi.ghanoi.html#configuration"><span class="id" title="definition">configuration</span></a> 3 <a class="idref" href="hanoi.ghanoi3.html#n"><span class="id" title="variable">n</span></a>) : <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hmove"><span class="id" title="variable">hmove</span></a> <a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a> <a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hmove"><span class="id" title="variable">hmove</span></a> <a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a> <a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a><br>
   := <a class="idref" href="hanoi.ghanoi.html#move_sym"><span class="id" title="lemma">move_sym</span></a> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hsym"><span class="id" title="variable">hsym</span></a> <a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a> <a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(33, '0_3_3');
+      mouseover(43, '0_3_3');
       "><br>
 <span class="id" title="keyword">Let</span> <a name="GHanoi3.hconnect"><span class="id" title="variable">hconnect</span></a> <span class="id" title="var">n</span> := <span class="id" title="definition">connect</span> (@<a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hmove"><span class="id" title="variable">hmove</span></a> <a class="idref" href="hanoi.ghanoi3.html#n"><span class="id" title="variable">n</span></a>).</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(34, '0_3_3');
+      mouseover(44, '0_3_3');
       "><br>
 <br>
 <span class="id" title="keyword">Local</span> <span class="id" title="keyword">Notation</span> "c1 `--&gt; c2" := (<a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hmove"><span class="id" title="variable">hmove</span></a> <span class="id" title="var">c1</span> <span class="id" title="var">c2</span>)<br>
     (<span class="id" title="var">format</span> "c1  `--&gt;  c2", <span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 60).</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(35, '0_3_3');
+      mouseover(45, '0_3_3');
       "><br>
 <span class="id" title="keyword">Local</span> <span class="id" title="keyword">Notation</span> "c1 `--&gt;* c2" := (<a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hconnect"><span class="id" title="variable">hconnect</span></a> <span class="id" title="var">c1</span> <span class="id" title="var">c2</span>) <br>
     (<span class="id" title="var">format</span> "c1  `--&gt;*  c2", <span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 60).</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(36, '0_3_3');
+      mouseover(46, '0_3_3');
       "><br>
 <br>
 <span class="id" title="keyword">Lemma</span> <a name="move_perfectr"><span class="id" title="lemma">move_perfectr</span></a> <span class="id" title="var">n</span> (<span class="id" title="var">c1</span> <span class="id" title="var">c2</span> : <a class="idref" href="hanoi.ghanoi.html#configuration"><span class="id" title="definition">configuration</span></a> 3 <a class="idref" href="hanoi.ghanoi3.html#n"><span class="id" title="variable">n</span></a><span class="id" title="notation">.+1</span>) : <br>
   <a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a> <a class="idref" href="hanoi.ghanoi3.html#85432e09f49a9ba30b9d76e5589c11d8"><span class="id" title="notation">`--&gt;</span></a> <a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a> <a class="idref" href="hanoi.ghanoi.html#ldisk"><span class="id" title="definition">ldisk</span></a> <span class="id" title="notation">!=</span> <a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a> <a class="idref" href="hanoi.ghanoi.html#ldisk"><span class="id" title="definition">ldisk</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="hanoi.ghanoi.html#0912ad45cedb44ed27b8d4b273ddb270"><span class="id" title="notation">↓[</span></a><a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a><a class="idref" href="hanoi.ghanoi.html#0912ad45cedb44ed27b8d4b273ddb270"><span class="id" title="notation">]</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">c</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">[</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">p</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">[</span></a><a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a> <a class="idref" href="hanoi.ghanoi.html#ldisk"><span class="id" title="definition">ldisk</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">,</span></a> <a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a> <a class="idref" href="hanoi.ghanoi.html#ldisk"><span class="id" title="definition">ldisk</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">]</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">]</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(37, '0_3_3');
+      mouseover(47, '0_3_3');
       "><br>
 <span class="id" title="keyword">Proof</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(38, '0_3_3');
+      mouseover(48, '0_3_3');
       "><br>
 <span class="id" title="tactic">move</span>⇒ <span class="id" title="var">c1Mc2</span> <span class="id" title="var">c1lDc2l</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(39, '0_3_3');
+      mouseover(49, '0_3_3');
       "><br>
 <span class="id" title="tactic">apply</span>/<span class="id" title="lemma">ffunP</span> ⇒ <span class="id" title="var">i</span>; <span class="id" title="tactic">rewrite</span> !<span class="id" title="lemma">ffunE</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(40, '0_3_3');
+      mouseover(50, '0_3_3');
       "><br>
 <span class="id" title="var">have</span> /<span class="id" title="lemma">ffunP</span>/(<span class="id" title="var">_</span> <span class="id" title="var">i</span>) := <a class="idref" href="hanoi.ghanoi.html#move_ldisk"><span class="id" title="lemma">move_ldisk</span></a> <span class="id" title="var">c1Mc2</span> <span class="id" title="var">c1lDc2l</span>; <span class="id" title="tactic">rewrite</span> !<span class="id" title="lemma">ffunE</span> ⇒ <span class="id" title="var">c1Ec2</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(41, '0_3_3');
+      mouseover(51, '0_3_3');
       "><br>
 <span class="id" title="tactic">apply</span>/<a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#sym_equal"><span class="id" title="abbreviation">sym_equal</span></a>/<span class="id" title="lemma">eqP</span>; <span class="id" title="tactic">rewrite</span> <a class="idref" href="hanoi.ghanoi3.html#opeg3E"><span class="id" title="lemma">opeg3E</span></a> //; <span class="id" title="tactic">apply</span>/<a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.ssr.ssrbool.html#andP"><span class="id" title="lemma">andP</span></a>; <span class="id" title="tactic">split</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(42, '0_3_3');
+      mouseover(52, '0_3_3');
       "><br>
   <span class="id" title="tactic">rewrite</span> -<span class="id" title="var">c1Ec2</span> /=; <span class="id" title="tactic">apply</span>/<span class="id" title="lemma">eqP</span> ⇒ <span class="id" title="var">c1lEc1r</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(43, '0_3_3');
+      mouseover(53, '0_3_3');
       "><br>
   <span class="id" title="var">have</span> /<a class="idref" href="hanoi.ghanoi.html#on_topP"><span class="id" title="lemma">on_topP</span></a> /(<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">c1lEc1r</span>) := <a class="idref" href="hanoi.ghanoi.html#move_on_topl"><span class="id" title="lemma">move_on_topl</span></a> <span class="id" title="var">c1Mc2</span> <span class="id" title="var">c1lDc2l</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(44, '0_3_3');
+      mouseover(54, '0_3_3');
       "><br>
   <span class="id" title="tactic">by</span> <span class="id" title="tactic">rewrite</span> /= <span class="id" title="lemma">leqNgt</span> <span class="id" title="lemma">ltn_ord</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(45, '0_3_3');
+      mouseover(55, '0_3_3');
       "><br>
 <span class="id" title="tactic">apply</span>/<span class="id" title="lemma">eqP</span> ⇒ <span class="id" title="var">c2lEc2r</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(46, '0_3_3');
+      mouseover(56, '0_3_3');
       "><br>
 <span class="id" title="var">have</span> /<a class="idref" href="hanoi.ghanoi.html#on_topP"><span class="id" title="lemma">on_topP</span></a> /(<span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">c2lEc2r</span>):= <a class="idref" href="hanoi.ghanoi.html#move_on_topr"><span class="id" title="lemma">move_on_topr</span></a> <span class="id" title="var">c1Mc2</span> <span class="id" title="var">c1lDc2l</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(47, '0_3_3');
+      mouseover(57, '0_3_3');
       "><br>
 <span class="id" title="tactic">by</span> <span class="id" title="tactic">rewrite</span> /= <span class="id" title="lemma">leqNgt</span> <span class="id" title="lemma">ltn_ord</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(48, '0_3_3');
+      mouseover(58, '0_3_3');
       "><br>
 <span class="id" title="keyword">Qed</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(49, '0_3_3');
+      mouseover(59, '0_3_3');
       "><br>
 <br>
 <span class="id" title="keyword">Lemma</span> <a name="move_perfectl"><span class="id" title="lemma">move_perfectl</span></a> <span class="id" title="var">n</span> (<span class="id" title="var">c1</span> <span class="id" title="var">c2</span> : <a class="idref" href="hanoi.ghanoi.html#configuration"><span class="id" title="definition">configuration</span></a> 3 <a class="idref" href="hanoi.ghanoi3.html#n"><span class="id" title="variable">n</span></a><span class="id" title="notation">.+1</span>) : <br>
@@ -675,27 +777,27 @@
   <a class="idref" href="hanoi.ghanoi.html#0912ad45cedb44ed27b8d4b273ddb270"><span class="id" title="notation">↓[</span></a><a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a><a class="idref" href="hanoi.ghanoi.html#0912ad45cedb44ed27b8d4b273ddb270"><span class="id" title="notation">]</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">c</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">[</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">p</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">[</span></a><a class="idref" href="hanoi.ghanoi3.html#c1"><span class="id" title="variable">c1</span></a> <a class="idref" href="hanoi.ghanoi.html#ldisk"><span class="id" title="definition">ldisk</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">,</span></a> <a class="idref" href="hanoi.ghanoi3.html#c2"><span class="id" title="variable">c2</span></a> <a class="idref" href="hanoi.ghanoi.html#ldisk"><span class="id" title="definition">ldisk</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">]</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">]</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(50, '0_3_3');
+      mouseover(60, '0_3_3');
       "><br>
 <span class="id" title="keyword">Proof</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(51, '0_3_3');
+      mouseover(61, '0_3_3');
       "><br>
 <span class="id" title="tactic">rewrite</span> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hmove_sym"><span class="id" title="variable">hmove_sym</span></a> <span class="id" title="lemma">eq_sym</span> <a class="idref" href="hanoi.ghanoi.html#opeg_sym"><span class="id" title="lemma">opeg_sym</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(52, '0_3_3');
+      mouseover(62, '0_3_3');
       "><br>
 <span class="id" title="tactic">exact</span>: <a class="idref" href="hanoi.ghanoi3.html#move_perfectr"><span class="id" title="lemma">move_perfectr</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(53, '0_3_3');
+      mouseover(63, '0_3_3');
       "><br>
 <span class="id" title="keyword">Qed</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(54, '0_3_3');
+      mouseover(64, '0_3_3');
       "><br>
 <br>
 <span class="id" title="keyword">Inductive</span> <a name="path3S_spec"><span class="id" title="inductive">path3S_spec</span></a> (<span class="id" title="var">n</span> : <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a>)  (<span class="id" title="var">c</span> : <a class="idref" href="hanoi.ghanoi.html#configuration"><span class="id" title="definition">configuration</span></a> 3 <a class="idref" href="hanoi.ghanoi3.html#n"><span class="id" title="variable">n</span></a><span class="id" title="notation">.+1</span>)<br>
@@ -718,69 +820,69 @@
   <a name="path3S_spec_false"><span class="id" title="constructor">path3S_spec_false</span></a> : <a class="idref" href="hanoi.ghanoi3.html#path3S_spec"><span class="id" title="inductive">path3S_spec</span></a> <a class="idref" href="hanoi.ghanoi3.html#c"><span class="id" title="variable">c</span></a> <a class="idref" href="hanoi.ghanoi3.html#cs"><span class="id" title="variable">cs</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Datatypes.html#false"><span class="id" title="constructor">false</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(55, '0_3_3');
+      mouseover(65, '0_3_3');
       "><br>
 <br>
 <span class="id" title="keyword">Lemma</span> <a name="path3SP"><span class="id" title="lemma">path3SP</span></a> <span class="id" title="var">n</span> (<span class="id" title="var">c</span> : <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="hanoi.ghanoi3.html#n"><span class="id" title="variable">n</span></a><span class="id" title="notation">.+1</span>) <span class="id" title="var">cs</span> : <a class="idref" href="hanoi.ghanoi3.html#path3S_spec"><span class="id" title="inductive">path3S_spec</span></a> <a class="idref" href="hanoi.ghanoi3.html#c"><span class="id" title="variable">c</span></a> <a class="idref" href="hanoi.ghanoi3.html#cs"><span class="id" title="variable">cs</span></a> (<span class="id" title="definition">path</span> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3.hmove"><span class="id" title="variable">hmove</span></a> <a class="idref" href="hanoi.ghanoi3.html#c"><span class="id" title="variable">c</span></a> <a class="idref" href="hanoi.ghanoi3.html#cs"><span class="id" title="variable">cs</span></a>).</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(56, '0_3_3');
+      mouseover(66, '0_3_3');
       "><br>
 <span class="id" title="keyword">Proof</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(57, '0_3_3');
+      mouseover(67, '0_3_3');
       "><br>
 <span class="id" title="tactic">case</span>: <a class="idref" href="hanoi.ghanoi.html#pathSP"><span class="id" title="lemma">pathSP</span></a>⇒ //; <span class="id" title="tactic">try</span> <span class="id" title="tactic">by</span> <span class="id" title="tactic">constructor</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(58, '0_3_3');
+      mouseover(68, '0_3_3');
       "><br>
 <span class="id" title="tactic">move</span>⇒ <span class="id" title="var">p1</span> <span class="id" title="var">p2</span> <span class="id" title="var">cs1</span> <span class="id" title="var">cs2</span> <span class="id" title="var">c1</span> <span class="id" title="var">c2</span> <span class="id" title="var">p1Dp2</span> <span class="id" title="var">p1Rp2</span> <span class="id" title="var">csE</span> <span class="id" title="var">c1Pcs1</span> <span class="id" title="var">lMc2</span> <span class="id" title="var">c2Pcs2</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(59, '0_3_3');
+      mouseover(69, '0_3_3');
       "><br>
 <span class="id" title="var">have</span> <span class="id" title="var">lc1cs1E</span> : <span class="id" title="definition">last</span> <span class="id" title="var">c1</span> <span class="id" title="var">cs1</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.11.0/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">c</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">[</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">`</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">p</span></a><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">[</span></a><span class="id" title="var">p1</span><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">,</span></a> <span class="id" title="var">p2</span><a class="idref" href="hanoi.ghanoi.html#51623d31567f2146425e0f8ec6320228"><span class="id" title="notation">]</span></a><a class="idref" href="hanoi.ghanoi.html#c9da604700f1eb99df4119111f7cec41"><span class="id" title="notation">]</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(60, '0_3_3');
+      mouseover(70, '0_3_3');
       "><br>
   <span class="id" title="var">have</span> := <a class="idref" href="hanoi.ghanoi3.html#move_perfectl"><span class="id" title="lemma">move_perfectl</span></a> <span class="id" title="var">lMc2</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(61, '0_3_3');
+      mouseover(71, '0_3_3');
       "><br>
   <span class="id" title="tactic">by</span> <span class="id" title="tactic">rewrite</span> !<a class="idref" href="hanoi.ghanoi.html#cliftr_ldisk"><span class="id" title="lemma">cliftr_ldisk</span></a> <a class="idref" href="hanoi.ghanoi.html#cliftrK"><span class="id" title="lemma">cliftrK</span></a>; <span class="id" title="tactic">apply</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(62, '0_3_3');
+      mouseover(72, '0_3_3');
       "><br>
 <span class="id" title="tactic">apply</span>: <a class="idref" href="hanoi.ghanoi3.html#path3S_spec_move"><span class="id" title="constructor">path3S_spec_move</span></a> (<span class="id" title="var">lc1cs1E</span>) <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>  ⇒ //.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(63, '0_3_3');
+      mouseover(73, '0_3_3');
       "><br>
 - <span class="id" title="tactic">by</span> <span class="id" title="tactic">rewrite</span> <span class="id" title="var">csE</span>; <span class="id" title="var">congr</span> (<span class="id" title="var">_</span> <span class="id" title="notation">++</span> <a class="idref" href="hanoi.ghanoi.html#cliftr"><span class="id" title="definition">cliftr</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="notation">::</span> <span class="id" title="var">_</span>).</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(64, '0_3_3');
+      mouseover(74, '0_3_3');
       "><br>
 <span class="id" title="tactic">by</span> <span class="id" title="tactic">rewrite</span> -<span class="id" title="var">lc1cs1E</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(65, '0_3_3');
+      mouseover(75, '0_3_3');
       "><br>
 <span class="id" title="keyword">Qed</span>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(66, '0_3_3');
+      mouseover(76, '0_3_3');
       "><br>
 <br>
 <span class="id" title="keyword">End</span> <a class="idref" href="hanoi.ghanoi3.html#GHanoi3"><span class="id" title="section">GHanoi3</span></a>.</span><span class="command" onmouseout="
       mouseout('0_3_3');
       " onmouseover="
-      mouseover(67, '0_3_3');
+      mouseover(77, '0_3_3');
       "><br>
 </span>
 </div>
