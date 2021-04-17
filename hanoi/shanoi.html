@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="alectryon-standalone"><head><title>shanoi.v</title><meta charset="utf-8"><meta content="Alectryon" name="generator"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="alectryon.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.4/css/ibm-type.min.css" integrity="sha512-sky5cf9Ts6FY1kstGOBHSybfKqdHR41M0Ldb0BjNiv3ifltoQIsg0zIaQ+wwdwgQ0w9vKFW7Js50lxH9vqNSSw==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.min.css" integrity="sha512-MbysAYimH1hH2xYzkkMHB6MqxBqfP0megxsCLknbYqHVwXTCg9IqHbk+ZP/vnhO8UEW6PaXAkKe2vQ+SWACxxA==" crossorigin="anonymous" /><script src="alectryon.js"></script><style type="text/css">pre { line-height: 125%; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #555753; font-style: italic } /* Comment */
+.highlight .err { color: #a40000; border: 1px solid #cc0000 } /* Error */
+.highlight .g { color: #000000 } /* Generic */
+.highlight .k { color: #8f5902 } /* Keyword */
+.highlight .l { color: #2e3436 } /* Literal */
+.highlight .n { color: #000000 } /* Name */
+.highlight .o { color: #000000 } /* Operator */
+.highlight .x { color: #2e3436 } /* Other */
+.highlight .p { color: #000000 } /* Punctuation */
+.highlight .ch { color: #555753; font-weight: bold; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #555753; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #3465a4; font-style: italic } /* Comment.Preproc */
+.highlight .cpf { color: #555753; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #555753; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #3465a4; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #a40000 } /* Generic.Deleted */
+.highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #a40000 } /* Generic.Error */
+.highlight .gh { color: #a40000; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #4e9a06 } /* Generic.Inserted */
+.highlight .go { color: #000000; font-style: italic } /* Generic.Output */
+.highlight .gp { color: #8f5902 } /* Generic.Prompt */
+.highlight .gs { color: #000000; font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #000000; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #000000; font-style: italic } /* Generic.Traceback */
+.highlight .kc { color: #204a87; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #4e9a06; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #4e9a06; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #204a87 } /* Keyword.Pseudo */
+.highlight .kr { color: #8f5902 } /* Keyword.Reserved */
+.highlight .kt { color: #204a87 } /* Keyword.Type */
+.highlight .ld { color: #2e3436 } /* Literal.Date */
+.highlight .m { color: #2e3436 } /* Literal.Number */
+.highlight .s { color: #ad7fa8 } /* Literal.String */
+.highlight .na { color: #c4a000 } /* Name.Attribute */
+.highlight .nb { color: #75507b } /* Name.Builtin */
+.highlight .nc { color: #204a87 } /* Name.Class */
+.highlight .no { color: #ce5c00 } /* Name.Constant */
+.highlight .nd { color: #3465a4; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #c4a000; text-decoration: underline } /* Name.Entity */
+.highlight .ne { color: #cc0000 } /* Name.Exception */
+.highlight .nf { color: #a40000 } /* Name.Function */
+.highlight .nl { color: #3465a4; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #000000 } /* Name.Namespace */
+.highlight .nx { color: #000000 } /* Name.Other */
+.highlight .py { color: #000000 } /* Name.Property */
+.highlight .nt { color: #a40000 } /* Name.Tag */
+.highlight .nv { color: #ce5c00 } /* Name.Variable */
+.highlight .ow { color: #8f5902 } /* Operator.Word */
+.highlight .w { color: #d3d7cf; text-decoration: underline } /* Text.Whitespace */
+.highlight .mb { color: #2e3436 } /* Literal.Number.Bin */
+.highlight .mf { color: #2e3436 } /* Literal.Number.Float */
+.highlight .mh { color: #2e3436 } /* Literal.Number.Hex */
+.highlight .mi { color: #2e3436 } /* Literal.Number.Integer */
+.highlight .mo { color: #2e3436 } /* Literal.Number.Oct */
+.highlight .sa { color: #ad7fa8 } /* Literal.String.Affix */
+.highlight .sb { color: #ad7fa8 } /* Literal.String.Backtick */
+.highlight .sc { color: #ad7fa8; font-weight: bold } /* Literal.String.Char */
+.highlight .dl { color: #ad7fa8 } /* Literal.String.Delimiter */
+.highlight .sd { color: #ad7fa8 } /* Literal.String.Doc */
+.highlight .s2 { color: #ad7fa8 } /* Literal.String.Double */
+.highlight .se { color: #ad7fa8; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #ad7fa8; text-decoration: underline } /* Literal.String.Heredoc */
+.highlight .si { color: #ce5c00 } /* Literal.String.Interpol */
+.highlight .sx { color: #ad7fa8 } /* Literal.String.Other */
+.highlight .sr { color: #ad7fa8 } /* Literal.String.Regex */
+.highlight .s1 { color: #ad7fa8 } /* Literal.String.Single */
+.highlight .ss { color: #8f5902 } /* Literal.String.Symbol */
+.highlight .bp { color: #5c35cc } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #a40000 } /* Name.Function.Magic */
+.highlight .vc { color: #ce5c00 } /* Name.Variable.Class */
+.highlight .vg { color: #ce5c00; text-decoration: underline } /* Name.Variable.Global */
+.highlight .vi { color: #ce5c00 } /* Name.Variable.Instance */
+.highlight .vm { color: #ce5c00 } /* Name.Variable.Magic */
+.highlight .il { color: #2e3436 } /* Literal.Number.Integer.Long */</style></head><body><article class="alectryon-root alectryon-centered alectryon-coqdoc"><div class="alectryon-banner">Built with <a href="https://github.com/cpitclaudel/alectryon/">Alectryon</a>, running Coq+SerAPI v8.13.0+0.13.0. Bubbles (<span class="alectryon-bubble"></span>) indicate interactive fragments: hover for details, tap to reveal contents. Use <kbd>Ctrl+↑</kbd> <kbd>Ctrl+↓</kbd> to navigate, <kbd>Ctrl+🖱️</kbd> to focus. On Mac, use <kbd>⌘</kbd> instead of <kbd>Ctrl</kbd>.</div><pre class="alectryon-io"><!-- Generator: Alectryon --><span class="alectryon-sentence"><input class="alectryon-toggle" id="shanoi-v-chk0" style="display: none" type="checkbox"><label class="alectryon-input" for="shanoi-v-chk0"><span class="highlight"><span class="kn">From</span> mathcomp <span class="kn">Require Import</span> all_ssreflect.</span></label><small class="alectryon-output"><div class="alectryon-output-sticky-wrapper"><div class="alectryon-messages"><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;[ rel _ _ | _ ]&quot;</span> was already used <span class="kr">in</span> scope
+fun_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;[ rel _ _ : _ | _ ]&quot;</span> was already used <span class="kr">in</span>
+scope fun_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;[ rel _ _ in _ &amp; _ | _ ]&quot;</span> was already used
+<span class="kr">in</span> scope fun_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;[ rel _ _ in _ &amp; _ ]&quot;</span> was already used <span class="kr">in</span>
+scope fun_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;[ rel _ _ in _ | _ ]&quot;</span> was already used <span class="kr">in</span>
+scope fun_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;[ rel _ _ in _ ]&quot;</span> was already used <span class="kr">in</span> scope
+fun_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ + _&quot;</span> was already used <span class="kr">in</span> scope nat_scope.
+[notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ - _&quot;</span> was already used <span class="kr">in</span> scope nat_scope.
+[notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &lt;= _&quot;</span> was already used <span class="kr">in</span> scope nat_scope.
+[notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &lt; _&quot;</span> was already used <span class="kr">in</span> scope nat_scope.
+[notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &gt;= _&quot;</span> was already used <span class="kr">in</span> scope nat_scope.
+[notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &gt; _&quot;</span> was already used <span class="kr">in</span> scope nat_scope.
+[notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &lt;= _ &lt;= _&quot;</span> was already used <span class="kr">in</span> scope
+nat_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &lt; _ &lt;= _&quot;</span> was already used <span class="kr">in</span> scope
+nat_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &lt;= _ &lt; _&quot;</span> was already used <span class="kr">in</span> scope
+nat_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ &lt; _ &lt; _&quot;</span> was already used <span class="kr">in</span> scope
+nat_scope. [notation-overridden,parsing]</span></blockquote><blockquote class="alectryon-message"><span class="highlight"><span class="kn">Notation</span> <span class="s2">&quot;_ * _&quot;</span> was already used <span class="kr">in</span> scope nat_scope.
+[notation-overridden,parsing]</span></blockquote></div></div></small><span class="alectryon-wsp">
+</span></span><span class="alectryon-wsp"><span class="highlight"><span class="kn">From</span> hanoi <span class="kn">Require Import</span> gdist ghanoi.
+
+
+<span class="kn">Set Implicit Arguments</span>.
+<span class="kn">Unset Strict Implicit</span>.
+<span class="kn">Unset Printing Implicit Defensive</span>.
+
+
+<span class="kn">Section</span> <span class="nf">sHanoi</span>.
+
+<span class="sd">(*****************************************************************************)</span>
+<span class="c">(*  The pegs are the elements of &#39;I_n.+3                                     *)</span>
+<span class="sd">(*****************************************************************************)</span>
+
+<span class="kn">Variable</span> <span class="nv">m</span> : nat.
+<span class="kn">Implicit Type</span> <span class="nf">p</span> : peg m.+<span class="mi">3</span>.
+
+<span class="kn">Local Notation</span> <span class="s2">&quot;c1 `--&gt; c2&quot;</span> := (smove c1 c2)
+    (<span class="kn">format</span> <span class="s2">&quot;c1  `--&gt;  c2&quot;</span>, <span class="kn">at level</span> <span class="mi">60</span>).
+<span class="kn">Local Notation</span> <span class="s2">&quot;c1 `--&gt;* c2&quot;</span> := (connect smove c1 c2) 
+    (<span class="kn">format</span> <span class="s2">&quot;c1  `--&gt;*  c2&quot;</span>, <span class="kn">at level</span> <span class="mi">60</span>).
+
+<span class="kn">Let</span> <span class="nf">p0</span> : peg m.+<span class="mi">3</span> := ord0.
+
+<span class="kn">Definition</span> <span class="nf">so1</span> <span class="nv">p</span> : (peg m.+<span class="mi">3</span>) := <span class="kr">if</span> (p == inord <span class="mi">1</span>) <span class="kr">then</span> inord <span class="mi">2</span> <span class="kr">else</span> inord <span class="mi">1</span>.
+
+<span class="kn">Lemma</span> <span class="nf">so1_cor</span> <span class="nv">p</span> : so1 p != p0 /\ so1 p != p.
+<span class="kn">Proof</span>.
+<span class="nb">rewrite</span> /so1; <span class="nb">case</span>: (p =P _) =&gt; [-&gt;|/eqP pD1]; <span class="nb">split</span>.
+- <span class="bp">by</span> <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+- <span class="bp">by</span> <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+- <span class="bp">by</span> <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+<span class="bp">by</span> <span class="nb">rewrite</span> eq_sym.
+<span class="kn">Qed</span>.
+
+<span class="kn">Definition</span> <span class="nf">so2</span> <span class="nv">p1</span> <span class="nv">p2</span> : (peg m.+<span class="mi">3</span>) := 
+<span class="kr">if</span> (p1 == inord <span class="mi">1</span>) <span class="kr">then</span> 
+  <span class="kr">if</span> (p2 == inord <span class="mi">2</span>) <span class="kr">then</span> inord <span class="mi">3</span> <span class="kr">else</span> inord <span class="mi">2</span>
+<span class="kr">else</span> 
+  <span class="kr">if</span> (p2 == inord <span class="mi">1</span>) <span class="kr">then</span>
+    <span class="kr">if</span> (p1 == inord <span class="mi">2</span>) <span class="kr">then</span> inord <span class="mi">3</span> <span class="kr">else</span> inord <span class="mi">2</span>
+  <span class="kr">else</span> inord <span class="mi">1</span>.
+
+<span class="kn">Lemma</span> <span class="nf">so2_cor</span> <span class="nv">p1</span> <span class="nv">p2</span> : 
+  <span class="mi">0</span> &lt; m -&gt;
+  [/\ so2 p1 p2 != p0, so2 p1 p2 != p1 &amp; so2 p1 p2 != p2].
+<span class="kn">Proof</span>.
+<span class="nb">move</span>=&gt; m_gt0.
+<span class="nb">rewrite</span> /so2; <span class="nb">case</span>: (p1 =P _) =&gt; [-&gt;|/eqP p1D1];
+  <span class="nb">rewrite</span> /so2; <span class="nb">case</span>: (p2 =P _) =&gt; [-&gt;|/eqP p2D].
+- <span class="bp">by</span> <span class="nb">split</span>; <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+- <span class="bp">by</span> <span class="nb">split</span>; <span class="kp">try</span> (<span class="bp">by</span> <span class="nb">rewrite</span> eq_sym); <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+- <span class="nb">case</span>: (p1 =P _) =&gt; [-&gt;|/eqP p1D2].
+    <span class="bp">by</span> <span class="nb">split</span>; <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+  <span class="bp">by</span> <span class="nb">split</span>; <span class="kp">try</span> (<span class="bp">by</span> <span class="nb">rewrite</span> eq_sym); <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+<span class="bp">by</span> <span class="nb">split</span>; <span class="kp">try</span> (<span class="bp">by</span> <span class="nb">rewrite</span> eq_sym); <span class="nb">apply</span>/eqP/val_eqP; <span class="nb">rewrite</span> /= !inordK.
+<span class="kn">Qed</span>. 
+
+<span class="kn">Lemma</span> <span class="nf">shanoi_connect_perfect</span> <span class="nv">n</span> (<span class="nv">c</span> : configuration _ n) <span class="nv">p</span> : c `--&gt;* `c[p].
+<span class="kn">Proof</span>.
+<span class="nb">have</span> sirr := @sirr m.+<span class="mi">3</span>.
+<span class="nb">elim</span>: n c p =&gt; [c p | n IH c p]; <span class="kp">first</span> <span class="bp">by</span> <span class="nb">apply</span>/eq_connect0/ffunP=&gt; [] [[]].
+<span class="nb">pose</span> p1 := c ldisk.
+<span class="nb">rewrite</span> -[c]cunliftrK -/p1 -[perfect p]cunliftrK perfect_unliftr ffunE.
+<span class="nb">have</span> [&lt;-|/eqP pDp1] := p =P p1; <span class="kp">first</span> <span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+<span class="nb">have</span> [p1Ep0|/eqP p1Dp0] := p1 =P p0.
+  <span class="nb">rewrite</span> p1Ep0.
+  <span class="nb">case</span>: (so1_cor p) =&gt; sDp0 sDp.
+  <span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[so1 p]]_p _); <span class="nb">last first</span>.
+    <span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+  <span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[so1 p]]_p0 _).
+    <span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+  <span class="nb">apply</span>/connect1/move_liftr_perfect; <span class="kp">try</span> <span class="bp">by</span> <span class="nb">rewrite</span> eq_sym.
+  <span class="bp">by</span> <span class="nb">rewrite</span> /srel /= eq_sym -p1Ep0 pDp1.
+<span class="nb">have</span> [pEp0|/eqP pDp0] := p =P p0.
+  <span class="nb">case</span>: (so1_cor p1) =&gt; sDp0 sDp1.
+  <span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[so1 p1]]_p1 _).
+    <span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+  <span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[so1 p1]]_p _).
+    <span class="nb">apply</span>/connect1/move_liftr_perfect; <span class="kp">try</span> <span class="bp">by</span> <span class="nb">rewrite</span> eq_sym.
+      <span class="bp">by</span> <span class="nb">rewrite</span> /srel /= eq_sym pDp1 pEp0 muln0.
+    <span class="bp">by</span> <span class="nb">rewrite</span> eq_sym pEp0.
+  <span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+<span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[p]]_p1 _).
+  <span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+<span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[p]]_p0 _).
+  <span class="nb">apply</span>/connect1/move_liftr_perfect; <span class="kp">try</span> <span class="bp">by</span> <span class="nb">rewrite</span> eq_sym.
+  <span class="bp">by</span> <span class="nb">rewrite</span> /srel /= p1Dp0 muln0.
+<span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[p1]]_p0 _).
+  <span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+<span class="nb">apply</span>: connect_trans (_ : connect _ ↑[`c[p1]]_p _).
+  <span class="nb">apply</span>/connect1/move_liftr_perfect; <span class="kp">try</span> <span class="bp">by</span> <span class="nb">rewrite</span> // eq_sym.
+  <span class="bp">by</span> <span class="nb">rewrite</span> /srel /= eq_sym pDp0.
+<span class="bp">by</span> <span class="nb">apply</span>/connect_liftr/IH.
+<span class="kn">Qed</span>.
+
+<span class="kn">Lemma</span> <span class="nf">shanoi_connect</span> <span class="nv">n</span> (<span class="nv">c1</span> <span class="nv">c2</span> : configuration m.+<span class="mi">3</span> n) : c1 `--&gt;* c2.
+<span class="kn">Proof</span>.
+<span class="nb">apply</span>: connect_trans (shanoi_connect_perfect _ p0) _.
+<span class="nb">rewrite</span> (connect_sym (@ssym m.+<span class="mi">3</span>)).
+<span class="nb">apply</span>: shanoi_connect_perfect.
+<span class="kn">Qed</span>.
+
+<span class="kn">End</span> <span class="nf">sHanoi</span>.</span></span></pre></article></body></html>
