@@ -25,12 +25,12 @@ SOFTWARE.
 /* CSS reset for .alectryon-io */
 /*******************************/
 
-.alectryon-io .highlight {
-    background: none; /* Some Sphinx themes set a background on .highlight */
+.alectryon-io blockquote {
+    line-height: inherit;
 }
 
-.alectryon.io blockquote {
-    line-height: inherit;
+.alectryon-io blockquote:after {
+    display: none;
 }
 
 .alectryon-io label {
@@ -90,22 +90,18 @@ In any case, make an exception for comments:
 */
 
 .alectryon-toggle,
-.alectryon-io .alectryon-toggle,
 .alectryon-io .alectryon-extra-goal-toggle {
     display: none;
 }
 
 .alectryon-bubble,
-.alectryon-toggle-label,
-.alectryon-io label.alectryon-input,
-.alectryon-io .alectryon-extra-goal-label {
+.alectryon-io label {
     cursor: pointer;
 }
 
-.alectryon-toggle-label,
-.alectryon-extra-goal-label {
+.alectryon-toggle-label {
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 .alectryon-io .alectryon-input {
@@ -120,35 +116,35 @@ In any case, make an exception for comments:
 .alectryon-bubble:before,
 .alectryon-toggle-label:before,
 .alectryon-io label.alectryon-input:after,
-.alectryon-io .alectryon-extra-goal-label:before {
+.alectryon-io .alectryon-goal > label:before {
     border: 1px solid #babdb6;
-    border-radius: 1rem;
+    border-radius: 1em;
     box-sizing: border-box;
     content: '';
     display: inline-block;
     font-weight: bold;
-    height: 0.25rem;
-    margin-bottom: 0.15rem;
+    height: 0.25em;
+    margin-bottom: 0.15em;
     vertical-align: middle;
-    width: 0.75rem;
+    width: 0.75em;
 }
 
 .alectryon-toggle-label:before,
-.alectryon-io .alectryon-extra-goal-label:before {
-    margin-right: 0.25rem;
+.alectryon-io .alectryon-goal > label:before {
+    margin-right: 0.25em;
 }
 
-.alectryon-io .alectryon-extra-goal-label::before {
-    margin-top: -0.35rem;
+.alectryon-io .alectryon-goal > label:before {
+    margin-top: -0.35em;
 }
 
 .alectryon-io label.alectryon-input {
-    padding-right: 1rem; /* Prevent line wraps before the checkbox bubble */
+    padding-right: 1em; /* Prevent line wraps before the checkbox bubble */
 }
 
 .alectryon-io label.alectryon-input:after {
-    margin-left: 0.25rem;
-    margin-right: -1rem; /* Compensate for the anti-wrapping space */
+    margin-left: 0.25em;
+    margin-right: -1em; /* Compensate for the anti-wrapping space */
 }
 
 .alectryon-failed {
@@ -158,7 +154,7 @@ In any case, make an exception for comments:
     text-decoration: red dotted underline;
     text-decoration-skip-ink: none;
     /* Chrome prints background images in low resolution, yielding a blurry underline */
-    /* background: bottom / 0.3rem auto repeat-x url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyLjY0NiAxLjg1MiIgaGVpZ2h0PSI4IiB3aWR0aD0iMTAiPjxwYXRoIGQ9Ik0wIC4yNjVjLjc5NCAwIC41MyAxLjMyMiAxLjMyMyAxLjMyMi43OTQgMCAuNTMtMS4zMjIgMS4zMjMtMS4zMjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9Ii41MjkiLz48L3N2Zz4=); */
+    /* background: bottom / 0.3em auto repeat-x url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyLjY0NiAxLjg1MiIgaGVpZ2h0PSI4IiB3aWR0aD0iMTAiPjxwYXRoIGQ9Ik0wIC4yNjVjLjc5NCAwIC41MyAxLjMyMiAxLjMyMyAxLjMyMi43OTQgMCAuNTMtMS4zMjIgMS4zMjMtMS4zMjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9Ii41MjkiLz48L3N2Zz4=); */
 }
 
 /* Wrapping :hover rules in a media query ensures that tapping a Coq sentence
@@ -184,8 +180,8 @@ In any case, make an exception for comments:
 }
 
 .alectryon-toggle:checked + .alectryon-toggle-label:before,
-.alectryon-io .alectryon-toggle:checked + label.alectryon-input:after,
-.alectryon-io .alectryon-extra-goal-toggle:checked + .alectryon-goal .alectryon-extra-goal-label:before {
+.alectryon-io .alectryon-sentence > .alectryon-toggle:checked + label.alectryon-input:after,
+.alectryon-io .alectryon-extra-goal-toggle:checked + .alectryon-goal > label:before {
     background-color: #babdb6;
     border-color: #babdb6;
 }
@@ -208,7 +204,7 @@ In any case, make an exception for comments:
     left: 0;
     right: 0;
     position: absolute;
-    padding: 0.25rem 0;
+    padding: 0.25em 0;
     overflow: visible; /* Let box-shadows overflow */
     z-index: 1; /* Default to an index lower than that used by :hover */
 }
@@ -256,7 +252,7 @@ In any case, make an exception for comments:
     background: #eeeeec;
 	border: thin solid #d3d7cf; /* Convenient when pre's background is already #EEE */
     display: block;
-    padding: 0.25rem;
+    padding: 0.25em;
 }
 
 .alectryon-message::before {
@@ -274,23 +270,23 @@ In any case, make an exception for comments:
 
 /* Show goals when a toggle is set */
 .alectryon-toggle:checked + label + .alectryon-container label.alectryon-input + .alectryon-output,
-.alectryon-io .alectryon-sentence .alectryon-toggle:checked ~ .alectryon-output {
+.alectryon-io .alectryon-sentence > .alectryon-toggle:checked ~ .alectryon-output {
     display: block;
     position: static;
     width: unset;
     background: unset; /* Override the backgrounds set in floating in windowed mode */
-    padding: 0.25rem 0; /* Re-assert so that later :hover rules don't override this padding */
+    padding: 0.25em 0; /* Re-assert so that later :hover rules don't override this padding */
 }
 
 .alectryon-toggle:checked + label + .alectryon-container label.alectryon-input + .alectryon-output .goal-hyps,
-.alectryon-io .alectryon-toggle:checked ~ .alectryon-output .goal-hyps {
+.alectryon-io .alectryon-sentence > .alectryon-toggle:checked ~ .alectryon-output .goal-hyps {
     /* Overridden back in windowed style */
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 
-.alectryon-toggle:checked + label + .alectryon-container .alectryon-sentence .alectryon-output > .alectryon-output-sticky-wrapper,
-.alectryon-io .alectryon-sentence .alectryon-toggle:checked ~ .alectryon-output > .alectryon-output-sticky-wrapper {
+.alectryon-toggle:checked + label + .alectryon-container .alectryon-sentence .alectryon-output > div,
+.alectryon-io .alectryon-sentence > .alectryon-toggle:checked ~ .alectryon-output > div {
     display: block;
 }
 
@@ -303,8 +299,8 @@ In any case, make an exception for comments:
     overflow-y: unset;
 }
 
-.alectryon-toggle:checked + label + .alectryon-container .alectryon-toggle ~ .alectryon-wsp,
-.alectryon-io .alectryon-toggle:checked ~ .alectryon-wsp {
+.alectryon-toggle:checked + label + .alectryon-container .alectryon-sentence > .alectryon-toggle ~ .alectryon-wsp,
+.alectryon-io .alectryon-sentence > .alectryon-toggle:checked ~ .alectryon-wsp {
     display: none;
 }
 
@@ -312,14 +308,9 @@ In any case, make an exception for comments:
 .alectryon-io .alectryon-message,
 .alectryon-io .alectryon-goals,
 .alectryon-io .alectryon-goal,
-.alectryon-io .goal-hyp,
+.alectryon-io .goal-hyps > div,
 .alectryon-io .goal-conclusion {
-    border-radius: 0.15rem;
-}
-
-.alectryon-io .alectryon-goal,
-.alectryon-io .alectryon-message {
-    margin: 0.25rem;
+    border-radius: 0.15em;
 }
 
 .alectryon-io .alectryon-goal,
@@ -328,7 +319,8 @@ In any case, make an exception for comments:
     background: #d3d7cf;
     display: block;
     flex-direction: column;
-    padding: 0.5rem;
+    margin: 0.25em;
+    padding: 0.5em;
     position: relative;
 }
 
@@ -339,37 +331,38 @@ In any case, make an exception for comments:
     flex-flow: column nowrap; /* re-stated in windowed mode */
     justify-content: space-around;
     /* LATER use a ‘gap’ property instead of margins once supported */
-    margin: -0.15rem -0.25rem; /* -0.15rem to cancel the item spacing */
-    padding-bottom: 0.5rem;
+    margin: -0.15em -0.25em; /* -0.15em to cancel the item spacing */
+    padding-bottom: 0.5em;
 }
 
-.alectryon-io .goal-hyp,
+.alectryon-io .goal-hyps > div,
 .alectryon-io .goal-conclusion {
     background: #eeeeec;
     display: inline-block;
-    padding: 0.15rem 0.35rem;
+    padding: 0.15em 0.35em;
 }
 
-.alectryon-io .goal-hyp {
+.alectryon-io .goal-hyps > div {
     align-items: baseline;
     display: inline-flex;
-    margin: 0.15rem 0.25rem;
+    margin: 0.15em 0.25em;
 }
 
-.alectryon-io .hyp-names {
+.alectryon-io .goal-hyps > div > var {
     font-weight: 600;
+    font-style: unset;
     /* Shrink the list of names, but let it grow as long as space is available. */
     flex-basis: min-content;
     flex-grow: 1;
 }
 
-.alectryon-io .hyp-punct {
+.alectryon-io .goal-hyps > div b {
     font-weight: 600;
-    margin: 0 0.5rem;
+    margin: 0 0.5em;
 }
 
-.alectryon-io .hyp-body-block,
-.alectryon-io .hyp-type-block {
+.alectryon-io .hyp-body,
+.alectryon-io .hyp-type {
     display: flex;
     align-items: baseline;
 }
@@ -387,7 +380,7 @@ In any case, make an exception for comments:
     display: block;
     flex-grow: 1;
     height: 0;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5em 0;
 }
 
 .alectryon-io .goal-separator .goal-name {
@@ -396,16 +389,16 @@ In any case, make an exception for comments:
 }
 
 /**********/
-/* Header */
+/* Banner */
 /**********/
 
 .alectryon-banner {
     background: #eeeeec;
     border: 1px solid #babcbd;
     font-size: 0.75em;
-    padding: 0.25rem;
+    padding: 0.25em;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .alectryon-banner a {
@@ -428,6 +421,14 @@ In any case, make an exception for comments:
     vertical-align: middle;
 }
 
+/**********/
+/* Toggle */
+/**********/
+
+.alectryon-toggle-label {
+    margin: 1rem 0;
+}
+
 /******************/
 /* Floating style */
 /******************/
@@ -438,12 +439,12 @@ In any case, make an exception for comments:
        when they are both :checked and -targeted, since it gets confusing as
        things jump around; hence the commented-output part of the selector,
        which would otherwise increase specificity */
-    .alectryon-floating .alectryon-sentence.alectryon-target /* .alectryon-toggle ~ */ .alectryon-output,
+    .alectryon-floating .alectryon-sentence.alectryon-target /* > .alectryon-toggle ~ */ .alectryon-output,
     .alectryon-floating .alectryon-sentence:hover .alectryon-output {
         top: 0;
         left: 100%;
         right: -100%;
-        padding: 0 0.5rem;
+        padding: 0 0.5em;
         position:  absolute;
     }
 
@@ -463,15 +464,15 @@ In any case, make an exception for comments:
        .alectryon-output to a reasonable size (100%, through top = bottom = 0).
        See also https://stackoverflow.com/questions/43909940/. */
     /* See note on specificity above */
-    .alectryon-floating .alectryon-sentence.alectryon-target /* .alectryon-toggle ~ */ .alectryon-output .alectryon-output-sticky-wrapper,
-    .alectryon-floating .alectryon-sentence:hover .alectryon-output-sticky-wrapper {
+    .alectryon-floating .alectryon-sentence.alectryon-target /* > .alectryon-toggle ~ */ .alectryon-output > div,
+    .alectryon-floating .alectryon-sentence:hover .alectryon-output > div {
         margin-bottom: -200%;
         position: sticky;
         top: 0;
     }
 
-    .alectryon-floating .alectryon-toggle:checked + label + .alectryon-container .alectryon-sentence .alectryon-output > .alectryon-output-sticky-wrapper,
-    .alectryon-floating .alectryon-io .alectryon-sentence .alectryon-toggle:checked ~ .alectryon-output > .alectryon-output-sticky-wrapper {
+    .alectryon-floating .alectryon-toggle:checked + label + .alectryon-container .alectryon-sentence .alectryon-output > div,
+    .alectryon-floating .alectryon-io .alectryon-sentence > .alectryon-toggle:checked ~ .alectryon-output > div {
         margin-bottom: unset; /* Undo the margin */
     }
 
@@ -502,8 +503,8 @@ In any case, make an exception for comments:
 
 /* See note about specificity below */
 .alectryon-windowed .alectryon-sentence:hover .alectryon-output,
-.alectryon-windowed .alectryon-sentence.alectryon-target .alectryon-toggle ~ .alectryon-output {
-    padding: 0.5rem;
+.alectryon-windowed .alectryon-sentence.alectryon-target > .alectryon-toggle ~ .alectryon-output {
+    padding: 0.5em;
     overflow-y: auto; /* Windowed contents may need to scroll */
 }
 
@@ -527,7 +528,7 @@ In any case, make an exception for comments:
     overflow-y: unset;
 }
 
-.alectryon-windowed .alectryon-output-sticky-wrapper {
+.alectryon-windowed .alectryon-output > div {
     display: flex; /* Put messages after goals */
     flex-direction: column-reverse;
 }
@@ -562,7 +563,7 @@ In any case, make an exception for comments:
 }
 
 .alectryon-coqdoc .doc .paragraph {
-    height: 0.75rem;
+    height: 0.75em;
 }
 
 /* Centered, Floating */
@@ -591,7 +592,7 @@ In any case, make an exception for comments:
     margin: 0;
     overflow-y: auto;
     position: absolute;
-    padding: 0 1rem;
+    padding: 0 1em;
 }
 
 .alectryon-standalone .alectryon-windowed > * {
@@ -616,7 +617,7 @@ In any case, make an exception for comments:
    goals to appear in consistent locations).  The selectors below ensure
    that :hover < :checked < -targeted in terms of specificity. */
 /* LATER: Reimplement this stuff with CSS variables */
-.alectryon-windowed .alectryon-sentence.alectryon-target .alectryon-toggle ~ .alectryon-output {
+.alectryon-windowed .alectryon-sentence.alectryon-target > .alectryon-toggle ~ .alectryon-output {
     position: fixed;
 }
 
